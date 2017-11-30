@@ -1,0 +1,349 @@
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    /* width: 100%;
+    height: 100%; */
+    font-family: 'Catamaran', sans-serif;
+}
+
+div.page-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+div.orange-grad {
+    width: 100%;
+    height: 27em;
+    background-image:
+        linear-gradient(
+                #EB5757, #D59152
+        );
+}
+
+div.orange-grad2 {
+    width: 100%;
+    height: 21em;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image:
+        /* linear-gradient(
+            to right, #E36E55, #D78F52
+        ), */
+    url(../img/mosques.jpg);
+    background-size: 105%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position: bottom right, right; */
+}
+
+.landing-note-con {
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*margin: auto;*/
+    /*text-align: center;*/
+}
+
+.landing-note {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 4.5em;
+    line-height: 1em;
+    text-align: center;
+}
+
+header {
+    padding: 2.5%;
+}
+
+.travel-logo {
+    float: left;
+}
+
+.travel-name {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 4%;
+    float: left;color: #ffffff;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 4%;
+    float: left;
+}
+
+.main-head {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.travel-logo-con {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.travel-links {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-top: 1%;
+}
+
+.reg-button-con {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.travel-link {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    color: #ffffff;
+    margin-right: 5%;
+    font-weight: 700;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.register-button {
+    border-radius: 25px;
+    font-size: 14px;
+    line-height: 23px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 700;
+    padding: 2% 6% 2% 6%;
+    width: 175px;
+    height: 45px;
+    float: right;
+}
+
+.question-con {
+    text-align: center;
+    margin-top: -5%;
+}
+
+.question-span {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.search-box {
+    position: absolute;
+    top: 24em;
+    left: 25%;
+    padding: 1em;
+    display: block;
+    width: 50%;
+    height: 12%;
+    border-radius: 50px;
+    border: solid #f0994a;
+    text-align: center;
+    font-size: 1em;
+    color: #c8c0c0;
+    font-weight: 500;
+}
+
+.about-us-title {
+    color: #c3c1c1;
+    text-align: center;
+    padding-top: 3em;
+    font-weight: 900;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    line-height: 1;
+}
+
+.about-us-content {
+    font-weight: 500;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 5%;
+}
+
+.location-container {
+    width: 80%;
+    height: 20em;
+    margin: 5% auto;
+    display: block;
+}
+
+.location-container .location-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2em;
+}
+
+
+.location-image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.2em;
+}
+
+.location-image--1 {
+    background: url(../img/bauchi.jpg);
+}
+
+.location-image--2 {
+    background: url(../img/jos.jpg);
+}
+
+.location-image--3 {
+    background: url(../img/abuja.jpg);
+}
+.location-image .location-info {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    padding: 0 5%;
+    /* margin-top: 400px; */
+    box-sizing: border-box;
+}
+
+.location-image .location-info h3 {
+    font-family: 'Catamaran';
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+}
+.location-image .location-info span {
+    display: block;
+    color: #D78E52;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.see-more-con {
+    text-align: center;
+    margin: 15% 0;
+}
+
+.see-more-btn {
+    border: 0.15em solid #E36F55;
+    border-radius: 3em;
+    color: #E36F55;
+    font-size: 0.7em;
+    line-height: 0.2em;
+    padding: 0.7em 2em;
+}
+
+.blog-info {
+    text-align: left;
+    padding: 5%;
+    width: 42%;
+}
+
+.blog-info span {
+    color: #E36F55;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.blog-info h3 {
+    font-family: 'Catamaran';
+    color: #ffffff;
+    font-size: 4em;
+}
+
+.t-and-c {
+    font-weight: 700;
+    font-size: 0.9em;
+    color: #a9a9a9;
+    text-align: center;
+}
+
+.copy-front {
+    font-weight: 700;
+    font-size: 0.9em;
+    color: #a9a9a9;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .location-images {
+        
+    }
+    .location-container {
+        width: 33.333333%;
+        height: 20em;
+        margin: 2%;
+        display: inline-block;
+    }
+    
+    .location-container .location-image {
+        
+    }
+
+    div.location-images {
+        width: 100%;
+    }
+
+    .location-image .location-info h3 {
+    }
+    .location-image .location-info span {
+    }
+
+    footer {
+        padding: 5%;
+    }
+
+    .t-and-c {
+        font-weight: 700;
+        font-size: 0.9em;
+        color: #a9a9a9;
+        float: left;
+    }
+    
+    .copy-front {
+        font-weight: 700;
+        font-size: 0.9em;
+        color: #a9a9a9;
+        float: right;
+    }
+
+    .blog-info span {
+        color: #FEBE61;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    
+
+    div.orange-grad2 {
+        width: 100%;
+        height: 21em;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-image:
+            linear-gradient(
+                150deg, #E36E55 55%, url(../img/mosques.jpg) 35% 
+            );
+        /* background-size: 105%; */
+        /* background-size: 110%; */
+        background-repeat: no-repeat;
+        /* background-position: bottom right, right; */
+    }
+}
