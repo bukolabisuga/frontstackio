@@ -21,18 +21,10 @@ section {
     position: relative;
 }
 
-
-
-
 /* Nav */
 header {
     height: 70px;
     padding-top: 10px;
-    /*left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 100;*/
 }
 
 header .arinka-nav {
@@ -42,6 +34,7 @@ header .arinka-nav {
 
 header .arinka-nav .arinka-nav--left {
     float: left;
+    display: flex;
 }
 
 header .arinka-nav .arinka-nav--mid {
@@ -104,6 +97,8 @@ img.travel-logo {
     font-weight: 900;
     font-size: 0.9em;
     line-height: 1.2em;
+    padding-left: 0.5em;
+    margin-top: 0.8em;
 }
 
 .register-button {
@@ -344,7 +339,7 @@ section.hanging-out {
     font-size: 0.9em;
     color: #a9a9a9;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
 }
 
 .copy-front {
@@ -352,7 +347,7 @@ section.hanging-out {
     font-size: 0.9em;
     color: #a9a9a9;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
 }
 
 
@@ -383,6 +378,10 @@ section.hanging-out {
         padding: 1.1em 0.8em;
         width: 50%;
         font-size: 1em;
+    }
+
+    .travel-name {
+        margin-top: 1.5em;
     }
 
 
