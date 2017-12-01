@@ -4,9 +4,11 @@ html {
 
 body {
     margin: 0;
-    /* width: 100%;
-    height: 100%; */
     font-family: 'Catamaran', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 div.page-wrapper {
@@ -19,99 +21,89 @@ section {
     position: relative;
 }
 
-div.orange-grad {
-    width: 100%;
-    height: 27em;
-    background-image:
-        linear-gradient(
-                #EB5757, #D59152
-        );
-}
 
-div.orange-grad2 {
-    width: 100%;
-    height: 21em;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-image:
-        /* linear-gradient(
-            to right, #E36E55, #D78F52
-        ), */
-    url(../img/mosques.jpg);
-    background-size: 105%;
-    background-size: 110%;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-position: bottom right, right; */
-}
 
-.landing-note-con {
-    /*width: 100%;*/
-    /*height: auto;*/
-    /*margin: auto;*/
-    /*text-align: center;*/
-}
 
-.landing-note {
-    color: #ffffff;
-    font-weight: 900;
-    font-size: 4.5em;
-    line-height: 1em;
-    text-align: center;
-}
-
+/* Nav */
 header {
-    padding: 2.5%;
+    height: 70px;
+    padding-top: 10px;
+    /*left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;*/
 }
 
-.travel-logo {
+header .arinka-nav {
+    display: block;
+    padding: 0 2.5%;
+}
+
+header .arinka-nav .arinka-nav--left {
     float: left;
+}
+
+header .arinka-nav .arinka-nav--mid {
+    display: none;
+}
+
+header .arinka-nav .arinka-nav--right {
+    float: right;
+    padding-top: 5px;
+}
+
+header .arinka-nav .arinka-nav--right a {
+    display: block;
+    border-radius: 1.6em;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 4% 2.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .arinka-nav .arinka-nav--right a:hover {
+    color: #EB5757;
+}
+
+header .arinka-nav .arinka-nav--right a.reg-btn {
+    display: none;
+}
+
+.mobile-menu {
+    margin: 0;
+    background-image:
+    linear-gradient(
+            #EB5757, #E38551
+    );
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.05);
+    display: none;
+    left: 10px;
+    padding: 10px 20px 10px;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 100%;
+}
+
+.mobile-menu li {
+    text-align: right;
+    list-style-type: none;
+    color: #fff;
+}
+
+img.travel-logo {
+    max-width: 30px;
 }
 
 .travel-name {
     color: #ffffff;
     font-weight: 900;
-    font-size: 1em;
-    line-height: 1em;
-    margin: 4%;
-    float: left;color: #ffffff;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 22px;
-    margin: 4%;
-    float: left;
-}
-
-.main-head {
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.travel-logo-con {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
-
-.travel-links {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    padding-top: 1%;
-}
-
-.reg-button-con {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
-
-.travel-link {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    color: #ffffff;
-    margin-right: 5%;
-    font-weight: 700;
-    line-height: 16px;
-    font-size: 14px;
+    font-size: 0.9em;
+    line-height: 1.2em;
 }
 
 .register-button {
@@ -128,34 +120,66 @@ header {
     float: right;
 }
 
-.question-con {
-    text-align: center;
-    margin-top: -5%;
+
+section.hero {
+    height: 20em;
+    position: relative;
+    background-image:
+        linear-gradient(
+                #EB5757, #D59152
+        );
 }
 
-.question-span {
+section.hero .hero-text {
+    margin-top: 3em;
+    text-align: center;
     color: #fff;
+}
+
+section.hero .hero-text h1.hero-headline {
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1em;
+    margin: 1em;
+}
+
+section.hero .hero-text h1.hero-headline br {
+    display: none;
+}
+
+section.hero .hero-text p.hero-question {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 0.8em;
+    line-height: 1.3;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .search-box {
     position: absolute;
-    top: 24em;
-    left: 25%;
-    padding: 1em;
     display: block;
-    width: 50%;
-    height: 12%;
+    bottom: -7%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0.8em;
+    width: 80%;
     border-radius: 50px;
-    border: solid #f0994a;
+    border: solid #F2994A;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em;
     color: #c8c0c0;
+    font-family: 'Catamaran', sans-serif;
     font-weight: 500;
+    outline: none;
 }
 
-.about-us-title {
+/* About Arinka */
+
+section.about-us {
+    margin-top: 10%;
+}
+
+.about-us .about-us-title {
     color: #c3c1c1;
     text-align: center;
     padding-top: 3em;
@@ -165,11 +189,25 @@ header {
     line-height: 1;
 }
 
-.about-us-content {
+.about-us .about-us-content {
     font-weight: 500;
     font-size: 1.1em;
     text-align: center;
-    padding: 5%;
+    padding: 0 15%;
+    margin-top: 5%;
+}
+
+
+
+
+/* Locations */
+
+section.locations {
+    margin-top: 10%;
+}
+
+.location-images {
+    margin-bottom: 50px;
 }
 
 .location-container {
@@ -177,6 +215,7 @@ header {
     height: 20em;
     margin: 5% auto;
     display: block;
+    text-align: left;
 }
 
 .location-container .location-image {
@@ -203,32 +242,31 @@ header {
 }
 
 .location-image--1 {
-    background: url(../img/bauchi.jpg);
+    background-image: url('http://res.cloudinary.com/do52uumgy/image/upload/c_scale,w_600/v1512090824/manuel-moreno-39516_wmwzl0.jpg');
 }
 
 .location-image--2 {
-    background: url(../img/jos.jpg);
+    background: url('http://res.cloudinary.com/do52uumgy/image/upload/c_scale,w_600/v1512072883/nitin-garg-327400_equo2e.jpg');
 }
 
 .location-image--3 {
-    background: url(../img/abuja.jpg);
+    background: url('http://res.cloudinary.com/do52uumgy/image/upload/c_scale,w_1000/v1512072407/gabriel-gurrola-125352_i1hpwr.jpg');
 }
+
 .location-image .location-info {
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     width: 100%;
     padding: 0 5%;
-    /* margin-top: 400px; */
     box-sizing: border-box;
 }
 
 .location-image .location-info h3 {
-    font-family: 'Catamaran';
     font-weight: bold;
     font-size: 2em;
     color: #fff;
-    margin: 0;
-    line-height: 1.5;
+    margin-bottom: 0.1em;
+    line-height: 1;
 }
 .location-image .location-info span {
     display: block;
@@ -240,41 +278,73 @@ header {
 
 .see-more-con {
     text-align: center;
-    margin: 15% 0;
+    margin: 5% 0;
 }
 
 .see-more-btn {
-    border: 0.15em solid #E36F55;
-    border-radius: 3em;
+    border: 2px solid #E36F55;
+    border-radius: 50px;
     color: #E36F55;
-    font-size: 0.7em;
-    line-height: 0.2em;
-    padding: 0.7em 2em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.7em 3em;
+    cursor: pointer;
 }
 
-.blog-info {
-    text-align: left;
-    padding: 5%;
-    width: 42%;
+
+/* Hanging Out */
+
+section.hanging-out {
+    width: 100%;
+    height: 20em;
+    background-image: url('http://res.cloudinary.com/do52uumgy/image/upload/c_scale,w_800/v1512084945/charlie-costello-301722_batyzg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
 }
 
-.blog-info span {
-    color: #E36F55;
-    font-size: 1.5em;
+.hanging-out-info {
+    height: 100%;
+    padding: 15%;
+    position: relative;
+    text-align: center;
+}
+.hanging-out-info:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(227, 126, 85, 0.5);
+    -webkit-backface-visibility: hidden;
+    z-index: -1;
+}
+.hanging-out-info span {
+    color: #FFF;
+    font-size: 1.1em;
     font-weight: 700;
 }
 
-.blog-info h3 {
-    font-family: 'Catamaran';
+.hanging-out-info h3 {
     color: #ffffff;
     font-size: 4em;
+    line-height: 1;
+    margin: 15px 0;
 }
+.hanging-out-info h3 br {
+    display: none;
+}
+
+/* Footer */
 
 .t-and-c {
     font-weight: 700;
     font-size: 0.9em;
     color: #a9a9a9;
     text-align: center;
+    padding: 2em;
 }
 
 .copy-front {
@@ -282,34 +352,60 @@ header {
     font-size: 0.9em;
     color: #a9a9a9;
     text-align: center;
+    padding: 2em;
 }
 
+
+/* Responsive */
+
 @media screen and (min-width: 600px) {
-    .location-images {
-        
+    section.hero {
+        height: 30em;
     }
+
+    section.hero .hero-text {
+        margin-top: 4em;
+    }
+
+    section.hero .hero-text h1.hero-headline {
+        font-size: 4em;
+        line-height: 1em;
+    }
+
+    section.hero .hero-text p.hero-question {
+        font-weight: 500;
+        font-size: 1.5em;
+        margin: 3em auto;
+    }
+
+    .search-box {
+        bottom: -8%;
+        padding: 1.1em 0.8em;
+        width: 50%;
+        font-size: 1em;
+    }
+
+
+    /* Locations */
+    section.locations {
+        margin-top: 5%;
+    }
+
     .location-container {
-        width: 33.333333%;
+        width: 25%;
         height: 20em;
         margin: 2%;
         display: inline-block;
     }
-    
-    .location-container .location-image {
-        
-    }
 
     div.location-images {
         width: 100%;
+        text-align: center;
     }
 
-    .location-image .location-info h3 {
-    }
-    .location-image .location-info span {
-    }
 
     footer {
-        padding: 5%;
+        padding: 2em;
     }
 
     .t-and-c {
@@ -326,24 +422,120 @@ header {
         float: right;
     }
 
-    .blog-info span {
+    section.hanging-out {
+        height: 30em;
+    }
+
+    .hanging-out-info {
+        float: left;
+        background: linear-gradient(105deg, #e36e55 50%, transparent 50%);
+        height: 100%;
+        padding: 15% 0% 10% 8%;
+        position: relative;
+        text-align: left;
+    }
+
+    .hanging-out-info:after {
+        content: '';
+        position: absolute;
+        right: 30px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(100deg, #e36e55 0%, #D78F52 100%, transparent 50%);
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+        -webkit-backface-visibility: hidden;
+        z-index: -1;
+    }
+
+    .hanging-out-info h3 br {
+        display: block;
+    }
+
+    .hanging-out-info span {
         color: #FEBE61;
         font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    header .arinka-nav {
+        display: flex;
+    }
+
+    header .arinka-nav .arinka-nav--mid {
+        /*float: left;*/
+        display: block;
+        margin: 0 auto;
+    }
+
+    ul.main-menu {
+        list-style-type: none;
+        margin: 0;
+    }
+
+    ul.main-menu li {
+        color: #fff;
+        display: inline-block;
+        padding-right: 1em;
+    }
+
+    ul.main-menu li a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 15px;
         font-weight: 700;
     }
-    
 
-    div.orange-grad2 {
-        width: 100%;
-        height: 21em;
-        background-color: rgba(0, 0, 0, 0.3);
-        background-image:
-            linear-gradient(
-                150deg, #E36E55 55%, url(../img/mosques.jpg) 35% 
-            );
-        /* background-size: 105%; */
-        /* background-size: 110%; */
-        background-repeat: no-repeat;
-        /* background-position: bottom right, right; */
+    header .arinka-nav .arinka-nav--right a.reg-btn {
+        display: block;
     }
+
+    header .arinka-nav .arinka-nav--right .mobile-trigger, header .arinka-nav .arinka-nav--right .mobile-menu {
+        display: none;
+    }
+
+    section.hero .hero-text p.hero-question {
+        margin-top: 3em;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    section.hero .hero-text h1.hero-headline br {
+        display: block;
+    }
+
+    .hanging-out-info {
+        float: left;
+        background: linear-gradient(105deg, #e36e55 50%, transparent 50%);
+        height: 100%;
+        padding: 10% 0% 10% 8%;
+        position: relative;
+        text-align: left;
+    }
+
+    .hanging-out-info:after {
+        content: '';
+        position: absolute;
+        right: 30px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(100deg, #e36e55 0%, #D78F52 100%, transparent 50%);
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+        -webkit-backface-visibility: hidden;
+        z-index: -1;
+    }
+
+
 }

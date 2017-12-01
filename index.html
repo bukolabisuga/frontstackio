@@ -13,42 +13,53 @@
 </head>
 
 <body>
-
-    <section class="first-section">
-        <div class="orange-grad">
-            <header class="main-head">
-                <div class="travel-logo-con">
+    <section class="hero">
+        <header>
+            <div class="arinka-nav">
+                <div class="arinka-nav--left">
                     <img class="travel-logo" src="svg/arinka.svg" alt="Arinka logo">
                     <span class="travel-name"> ARINKA </span>
                 </div>
-                <!-- <div class="travel-links">
-                    <span class="travel-link">LOCATIONS</span>
-                    <span class="travel-link">MOODS</span>
-                    <span class="travel-link">BLOG</span>
+
+                <div class="arinka-nav--mid">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="" title="">Locations</a>
+                        </li>
+                        <li>
+                            <a href="" title="">Moods</a>
+                        </li>
+                        <li>
+                            <a href="" title="">Blog</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="reg-button-con">
-                    <button class="register-button">
-                        LOGIN / SIGNUP
-                    </button>
-                </div> -->
-                <div class="reg-button-con">
-                    <button class="register-button">
-                        MENU
-                    </button>
+                <div class="arinka-nav--right">
+                    <a class="reg-btn" href="">Login / Signup</a>
+                    <a class="mobile-trigger" id="mobile-trigger">MENU</a>
+                    <ul class="mobile-menu" id="mobile-menu">
+                        <li>
+                            <a href="" title="">Locations</a>
+                        </li>
+                        <li>
+                            <a href="" title="">Moods</a>
+                        </li>
+                        <li>
+                            <a href="" title="">Blog</a>
+                        </li>
+                    </ul>
                 </div>
-            </header>
-            <div class="landing-note-con">
-                <p class="landing-note">
-                    Discover the best places <br> to travel in Nigeria
-                </p>
             </div>
-            <div class="question-con">
-                <span class="question-span">What type of adventure are you looking for?</span>
-            </div>
-            <input class="search-box" type="text" placeholder="e.g educational, outdoors, relaxed">
+        </header>
+        <div class="hero-text">
+            <h1 class="hero-headline">
+                Discover the best places <br>to travel in Nigeria
+            </h1>
+            <p class="hero-question">What type of adventure are you looking for?</p>
         </div>
+        <input class="search-box" type="text" placeholder="e.g educational, outdoors, relaxed">
     </section>
-    <section>
+    <section class="about-us">
         <p class="about-us-title">ABOUT ARINKA</p>
         <p class="about-us-content"> Arinka is a fictional company, but actually a real idea someone had sometime in the past.
             In 1985 Aldus Corporation launched its first desktop publishing program Aldus PageMaker
@@ -56,10 +67,10 @@
             contained the variant lorem ipsum most common today.
         </p>
     </section>
-    <section>
+    <section class="locations">
         <div class="location-images">
             <div class="location-container">
-                <div class="location-image location-image--1">
+                <div class="location-image location-image--1" id="js-cover">
                     <div class="location-info">
                         <h3>Bauchi Park</h3>
                         <span>Relaxed holiday for two</span>
@@ -88,12 +99,10 @@
             <a class="see-more-btn">SEE MORE</a>
         </div>
     </section>
-    <section>
-        <div class="orange-grad2">
-            <div class="blog-info">
-                <span>ON THE BLOG</span>
-                <h3>Hanging out in Borno</h3>
-            </div>
+    <section class="hanging-out">
+        <div class="hanging-out-info">
+            <span>ON THE BLOG</span>
+            <h3>Hanging out <br>in Borno</h3>
         </div>
     </section>
     <footer>
@@ -105,6 +114,22 @@
         </div>
     </footer>
 
+    <script>
+        var mobileMenuHidden = true;
+        var trigger = document.getElementById('mobile-trigger');
+        var menu = document.getElementById('mobile-menu');
+
+        trigger.addEventListener("click", function() {
+            if (mobileMenuHidden) {
+                trigger.classList.add("is-active");
+                menu.style.display = "block";
+            } else {
+                trigger.classList.remove("is-active");
+                menu.style.display = "none";
+            }
+            mobileMenuHidden = !mobileMenuHidden;
+        });
+    </script>
 </body>
 
 </html>
